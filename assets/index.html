@@ -1,0 +1,368 @@
+<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <title>Push Trump Off A Cliff Again</title>
+
+
+    <meta name="author" content="inanimate carbon rod">
+
+    <meta name="robots" content="all">
+
+    <meta name="keywords" content="push trump off a cliff, push trump into a volcano, trump eaten by dinosaur, donald trump memes, trump memes, trump gifs, trump, trump approval rating, impeach trump, trump game, funny, volcano, dinosaur, manhole, man hole, washington post, colbert, javascript, flash, meme, trump voodoo doll, trump effigey"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Push Trump Off A Cliff Again" />
+
+    <meta property="og:url" content="https://www.pushtrumpoffacliffagain.com/" />
+    <meta property="og:image" content="assets/twitter_card.jpg" />
+
+    <meta name="description" content="Take out your frustrations with the President by pushing him off a virtual cliff, or into a virtual volcano.">
+    <meta property="og:description" content="Take out your frustrations with the President by pushing him off a virtual cliff, or into a virtual volcano." />
+
+    <meta name="theme-color" content="#283681" />
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+    <style>
+        #box_wrapper,
+        #header_div {
+            margin: 2em auto 0
+        }
+        
+        body {
+            background-color: #283681
+        }
+        
+        #header {
+            width: 450px
+        }
+        
+        #header_div {
+            text-align: center;
+            display: block
+        }
+        
+        #box_wrapper {
+            background-color: #1e2862;
+        }
+        
+        #box,
+        #box_wrapper {
+            width: 800px;
+            height: 450px;
+            position: relative;
+        }
+        
+        #box {
+            overflow: hidden;
+            user-select: none;
+            background: url('https://bucket.pushtrumpoffacliffagain.com/bg1.jpg') top left no-repeat;
+            background-size: 100%;
+            margin: 0 auto;
+            z-index: 80;
+            top: 0;
+            left: 0
+        }
+        
+        #loading {
+            top: 50%;
+            height: 2em;
+            width: 100%;
+            margin-top: -1.5em;
+            line-height: 3em;
+            color: #111637;
+            position: absolute;
+            text-transform: lowercase;
+            text-indent: .8em;
+            font-size: 3em;
+            text-align: center;
+            font-weight: bold;
+            z-index: 1;
+        }
+        
+        @media screen and (max-width:830px) {
+            #header {
+                width: 250px
+            }
+            #box {
+                transform-origin: 0 0;
+                transform: scale(.4);
+                position: absolute
+            }
+            #box,
+            #box_wrapper {
+                margin: 0;
+                padding: 0
+            }
+            #box_wrapper {
+                position: relative;
+                margin: 0 auto;
+                width: 320px;
+                height: 180px
+            }
+            #spaces {
+                display: none;
+            }
+        }
+    </style>
+
+    <base target="_blank">
+
+
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="//s7.addthis.com" />
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkE1NzAwN0IzNjFCNjExRTc4NDQ0QURFMUQyODcxQkNEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkE1NzAwN0I0NjFCNjExRTc4NDQ0QURFMUQyODcxQkNEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTU3MDA3QjE2MUI2MTFFNzg0NDRBREUxRDI4NzFCQ0QiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTU3MDA3QjI2MUI2MTFFNzg0NDRBREUxRDI4NzFCQ0QiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6pt7ZsAAACPklEQVR42rSWzytEURTH34wniqQY+f1rg8lKLCxkLUm2ahhElIVSykYWShYsMZSUJMnKQpQ/gKVZYBaUUn6OX7EgxvfWmZqu9+67d+a+U59m8Wbe/Zxz7z1nPHX+EUMyisAUeAcThqYwJb/XChZAA3gDP2BSh4BX4jv5YJwWZ5EDhsGs2wKsOi1gA7Rxz3J1SYi2oBHMgWab53EJI5XtEFWgRrC4tkqIBB7AocQ7UpJI8/ma7J5dg1NQTNUQRSaoJ5kjXQLsqj2CMzclRAIsft2WcBLgJfKAX6eEjAAvUQsqdUl4Fc7LN4jSwTR03Q7ZWeABJaAbdCpIOzYrWQE2CXvAIChXvOpCCRmBUtALBiT2XlnClCh7L2VekeLcsZQQHcJCEAB9JKIj/h1MqwqkUdMJgn6FssfAJ8hSqYSVQAFlHlQs+ws4ABmgS0JiFFTzAmW05yzzKoXM78AWWKcZwt7b4fC7bNZZTe60J3PVWHPaASvgHKSDaXomkrgCM15u8QHFAxelv2yrtHi8Y4ZJYs/md6f0z/rEpH0OJJE5K/s2WAIRi7YdtqnEMRiKt3STMg8qZv5Ciy9TKe1mBy/xBOYT5wmbhru0uMxgYlPxFmyCEE3HX4kpek6Hc4yfjkzgA5/tkpk/U+YhKntMUpplvg9urGbBItktO7zokQ7cGmWuEl/U2m2nYYg+7STuE/Y8kmQbjjmNYzuJKDUZds8vDc3Bd8JEiRgduHjmF4YLYXXyQzQsXhM63KXhUvwJMAC+xY1XmuwwvgAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://bucket.pushtrumpoffacliffagain.com/16x16.png">
+
+</head>
+
+<body>
+
+    <link rel="stylesheet" type="text/css" href="https://bucket.pushtrumpoffacliffagain.com/trump.css?1.51" />
+
+    <div id="wrapper">
+
+        <div id="header_div">
+            <a href="index.html" target="_self"><img src="https://bucket.pushtrumpoffacliffagain.com/header.png" id="header" alt="Push Donald Off a Cliff Again!" /></a>
+        </div>
+
+        <div id="box_wrapper">
+            <div id="loading">Loading...</div>
+            <!--   <a href="#" id="photo" data-featherlight="image"><img id="camera_icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwMCAxMDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTAsNDBjLTguMjg1LDAtMTUsNi43MTgtMTUsMTVjMCw4LjI4NSw2LjcxNSwxNSwxNSwxNWM4LjI4MywwLDE1LTYuNzE1LDE1LTE1ICAgIEM2NSw0Ni43MTgsNTguMjgzLDQwLDUwLDQweiBNOTAsMjVINzhjLTEuNjUsMC0zLjQyOC0xLjI4LTMuOTQ5LTIuODQ2bC0zLjEwMi05LjMwOUM3MC40MjYsMTEuMjgsNjguNjUsMTAsNjcsMTBIMzMgICAgYy0xLjY1LDAtMy40MjgsMS4yOC0zLjk0OSwyLjg0NmwtMy4xMDIsOS4zMDlDMjUuNDI2LDIzLjcyLDIzLjY1LDI1LDIyLDI1SDEwQzQuNSwyNSwwLDI5LjUsMCwzNXY0NWMwLDUuNSw0LjUsMTAsMTAsMTBoODAgICAgYzUuNSwwLDEwLTQuNSwxMC0xMFYzNUMxMDAsMjkuNSw5NS41LDI1LDkwLDI1eiBNNTAsODBjLTEzLjgwNywwLTI1LTExLjE5My0yNS0yNWMwLTEzLjgwNiwxMS4xOTMtMjUsMjUtMjUgICAgYzEzLjgwNSwwLDI1LDExLjE5NCwyNSwyNUM3NSw2OC44MDcsNjMuODA1LDgwLDUwLDgweiBNODYuNSw0MS45OTNjLTEuOTMyLDAtMy41LTEuNTY2LTMuNS0zLjVjMC0xLjkzMiwxLjU2OC0zLjUsMy41LTMuNSAgICBjMS45MzQsMCwzLjUsMS41NjgsMy41LDMuNUM5MCw0MC40MjcsODguNDMzLDQxLjk5Myw4Ni41LDQxLjk5M3oiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                /></a>
+                -->
+            <img id="volume" alt="Volume On/Off" title="volume" onclick="volume_toggle()" />
+            <img id="falling_icon" alt="Number of Falls:" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDUzNS4wMjIgNTM1LjAyMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTM1LjAyMiA1MzUuMDIxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPGNpcmNsZSBjeD0iMzg0LjI3OSIgY3k9IjI3NS4wODUiIHI9IjUxLjY1NyIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik01MTguNTE3LDI3OS43MTNjLTExLjU4LTQuMjg0LTI0LjQyMywxLjYwNy0yOC43MjYsMTMuMTY4bC0yOC45MTcsNzcuODU3bC0xOTUuMjQ4LTYxLjI4NWwzMC42Mi02My4yODYgICAgYzUuMzc0LTExLjExMSwwLjcyNy0yNC40Ny0xMC4zODUtMjkuODQ1Yy0xMS4wOTMtNS4zNzQtMjQuNDcxLTAuNzI3LTI5Ljg0NSwxMC4zNzVsLTQxLjg5NCw4Ni41NzkgICAgYy0yLjgzMSw1Ljg0Mi0yLjk3NCwxMi42MzMtMC40MDEsMTguNmMyLjU4Miw1Ljk1Nyw3LjYyMSwxMC41MDgsMTMuODE4LDEyLjQ0OWwzMS45MjksMTAuMDIxbC03Ni42MjUsNDMuNjQ1bC00OS4yOTQsMTQuNDk2ICAgIGMtMC4wNDgsMC4wMi0wLjA5NiwwLjAyOS0wLjE0NCwwLjAzOWwtMS42MDYsMC40NzdsLTcwLjIwOC04Ny40NzdjLTExLjU4LTE0LjQzOS0zMi42ODUtMTYuNzM0LTQ3LjExNC01LjE2NCAgICBjLTE0LjQzOSwxMS41OS0xNi43NDQsMzIuNjg0LTUuMTY0LDQ3LjEyM2w4NC4yNjUsMTA0Ljk4OEMxMDAuMDQyLDQ4MC41MjUsMTA5LjcyLDQ4NSwxMTkuNzIyLDQ4NSAgICBjMy4xNDYsMCw2LjMzMS0wLjQzOSw5LjQ1OC0xLjM2N2w2Ljk3MS0yLjA1NWw1Ny41NzYsNDYuMDljNi4xMiw0LjkwNiwxMy41NDEsNy4zNTQsMjAuOTQyLDcuMzU0ICAgIGM3LjQ1OCwwLDE0LjkwOC0yLjQ3NywyMS4wNTctNy40MzlMMjk3LjcsNDc3LjU3YzAuMjExLTAuMTcyLDAuMzYzLTAuMzgzLDAuNTY0LTAuNTY0bDEwMS4wNzUtNzguNzI3bDY4LjM4MiwyMS40NjcgICAgYzIuMjI5LDAuNjk3LDQuNDc2LDEuMDMzLDYuNzAzLDEuMDMzYzkuMTA0LDAsMTcuNjA0LTUuNjA0LDIwLjk0Mi0xNC41NjRsMzYuMzA5LTk3Ljc1OCAgICBDNTM1Ljk3OCwyOTYuODc3LDUzMC4wODcsMjg0LjAwNiw1MTguNTE3LDI3OS43MTN6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTQ1Ny45MDEsMjE1LjE0N2MwLDUuMjc4LDQuMjgzLDkuNTYyLDkuNTYyLDkuNTYyYzUuMjc4LDAsOS41NjItNC4yODQsOS41NjItOS41NjJWNjkuMzI4ICAgIGMwLTUuMjc4LTQuMjg0LTkuNTYyLTkuNTYyLTkuNTYyYy01LjI3OSwwLTkuNTYyLDQuMjg0LTkuNTYyLDkuNTYyVjIxNS4xNDd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTQ0My40NjEsMTU1LjM5MVY5LjU2MmMwLTUuMjc4LTQuMjg0LTkuNTYyLTkuNTYyLTkuNTYyYy01LjI3OSwwLTkuNTYyLDQuMjg0LTkuNTYyLDkuNTYydjE0NS44MjggICAgYzAsNS4yNzksNC4yODMsOS41NjIsOS41NjIsOS41NjJDNDM5LjE4NywxNjQuOTUzLDQ0My40NjEsMTYwLjY2OSw0NDMuNDYxLDE1NS4zOTF6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTExNS4zNDMsMTgwLjM5N3YxNDUuODE4YzAsNS4yODksNC4yODQsOS41NjIsOS41NjIsOS41NjJjNS4yNzgsMCw5LjU2Mi00LjI3Myw5LjU2Mi05LjU2MlYxODAuMzk3ICAgIGMwLTUuMjc5LTQuMjg0LTkuNTYyLTkuNTYyLTkuNTYyQzExOS42MjYsMTcwLjgzNCwxMTUuMzQzLDE3NS4xMTgsMTE1LjM0MywxODAuMzk3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxwYXRoIGQ9Ik0xNDguOTA3LDEyMC42MzF2MTQ1LjgyOGMwLDUuMjc5LDQuMjg0LDkuNTYyLDkuNTYyLDkuNTYyYzUuMjc5LDAsOS41NjItNC4yODMsOS41NjItOS41NjJWMTIwLjYzMSAgICBjMC01LjI3OS00LjI4NC05LjU2Mi05LjU2Mi05LjU2MkMxNTMuMTkxLDExMS4wNjksMTQ4LjkwNywxMTUuMzUzLDE0OC45MDcsMTIwLjYzMXoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K">
+            <div id="counter">
+
+                <div id="hitcount_span"></div>
+                <div id="hitcount_new"></div>
+            </div>
+
+            <canvas id="smoker"></canvas>
+            <canvas id="confetti"></canvas>
+            <div id="error">
+                click or touch to activate controls
+            </DIV>
+            <div id="box">
+                <div id="wordbubble"></div>
+                <div id="overlay"></div>
+                <div id="letter_wrapper">
+                    <div id="letter"></div>
+                    <div id="rubble"></div>
+                </div>
+                <div id="dino_and_donald">
+                    <div id="dino">
+                        <div id="head"></div>
+                        <div id="jaw"></div>
+                    </div>
+                    <div id="donald" onmousedown="mouse_down(false)" ontouchstart="mouse_down(false)" ontouchend="touch_end(1)">
+
+                        <div id="torso"></div>
+                        <div id="leg1"></div>
+                        <div id="leg2"></div>
+
+                    </div>
+
+                    <!-- End Donald-->
+                </div>
+                <!-- End Dino and Donald -->
+            </div>
+            <!-- End Box -->
+        </div>
+        <!-- Box Wrapper -->
+
+
+        <div id="content">
+
+            <div id="arrows">
+
+                <div id="leftborder">
+                    <div id="left" onmousedown="mouse_down(true)" ontouchstart="mouse_down(true)" ontouchend="touch_end(2)">&#8202;&#8202;&#x21E6;</div>
+
+                </div>
+                <div id="rightborder">
+                    <div id="right" onmousedown="mouse_down(false)" ontouchstart="mouse_down(false)" ontouchend="touch_end(1)">&#x21E8;&#8202;&#8202;</div>
+
+                </div>
+            </div>
+            <div id="buttons">
+
+                <div id="b" onmousedown="jump()" ontouchstart="jump()" ontouchend="touch_end(4)">Jump</div>
+                <div id="a" onmousedown="mouse_run()" ontouchstart="mouse_run()" ontouchend="touch_end(3)">Run</div>
+            </div>
+
+            <div id="spaces">
+                Space Bar: <strong>Jump</strong>
+                <Br /> Shift: <strong>Run</strong>
+
+
+
+            </div>
+
+
+
+            <div id="scenes">
+                <div id="scene1" onclick="select(1)"></div>
+                <div id="scene2" onclick="select(2)"></div>
+                <div id="scene3" onclick="select(3)"></div>
+                <div id="scene4" onclick="select(4)"></div>
+            </div>
+
+            <div id="share">
+                <div class="addthis_inline_share_toolbox"></div>
+            </div>
+
+            <div id="footer">
+                <!--
+
+                <a href="mailto:webmaster@pushtrumpoffacliffagain.com" id="rodlink">
+                    <svg id="rod" xmlns="http://www.w3.org/2000/svg" width="1980.000000pt" height="360.000000pt" viewBox="0 0 1980.000000 360.000000" preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,360.000000) scale(0.100000,-0.100000)"
+ stroke="none">
+
+<path d="M1010 3377 c-538 -160 -908 -937 -829 -1743 64 -664 415 -1206 854
+-1319 53 -13 1003 -15 9005 -15 7447 1 8951 3 8983 14 268 96 477 768 477
+1536 0 768 -209 1440 -477 1536 -32 11 -1536 13 -8988 13 l-8950 0 -75 -22z
+m17992 -152 c115 -78 237 -381 297 -740 38 -225 46 -334 46 -635 0 -434 -42
+-732 -143 -1030 -61 -178 -150 -325 -217 -357 -33 -16 -37 -16 -70 0 -67 32
+-156 179 -217 357 -101 298 -143 596 -143 1030 0 488 59 845 187 1145 59 136
+155 255 208 255 8 0 32 -11 52 -25z m-373 -121 c-304 -617 -304 -1891 0 -2508
+l47 -96 -8786 2 -8785 3 -67 27 c-446 179 -725 857 -643 1563 62 530 322 958
+651 1074 33 11 70 22 84 24 14 2 3967 5 8785 6 l8761 1 -47 -96z"/>
+<path d="M5049 2908 c-41 -34 -148 -127 -239 -208 -371 -328 -533 -451 -1045
+-795 -403 -271 -769 -494 -1160 -710 -88 -48 -179 -99 -203 -112 l-42 -24 42
+-57 c22 -31 42 -58 43 -60 5 -6 495 274 776 444 261 157 405 250 704 452 480
+324 676 474 1025 784 108 95 210 185 229 201 l33 27 -45 60 -44 60 -74 -62z"/>
+<path d="M16870 2724 c-452 -429 -652 -606 -905 -804 -427 -332 -738 -524
+-1357 -840 l-287 -146 35 -50 c20 -27 39 -55 43 -62 5 -10 82 26 297 139 636
+334 911 499 1229 737 348 261 529 417 997 860 l217 206 -16 26 c-9 15 -30 43
+-47 63 l-31 36 -175 -165z"/>
+<path d="M16735 1429 c-154 -158 -394 -341 -602 -458 l-91 -52 40 -57 c22 -31
+45 -56 51 -54 25 8 211 116 314 184 156 102 293 217 388 324 l57 65 -41 54
+c-23 30 -45 55 -49 55 -4 0 -34 -28 -67 -61z"/>
+
+</g>
+
+
+  
+
+</svg>
+                </a>
+
+-->
+
+                <div style="margin-bottom: 2em; text-transform: none;">
+                    <a href="https://www.twitter.com/oppositePOTUS">Follow @oppositePOTUS on Twitter!</a>
+                </div>
+                <div id="tablet">
+                    <img id="tablet_icon" onclick="tablet_mode()" title="tablet mode" alt="Tablet Mode" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDU3Ny42MDggNTc3LjYwOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTc3LjYwOCA1NzcuNjA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ2OC40OTksMEgxMDkuMTEzQzgwLjc1NywwLDU3Ljc2MiwyMi45ODcsNTcuNzYyLDUxLjM0MXY0NzQuOTI3YzAsMjguMzU0LDIyLjk5Myw1MS4zNDEsNTEuMzUxLDUxLjM0MWgzNTkuMzg1ICAgIGMyOC4zNTIsMCw1MS4zNDgtMjIuOTg0LDUxLjM0OC01MS4zNDFWNTEuMzM5QzUxOS44NDYsMjIuOTg1LDQ5Ni44NSwwLDQ2OC40OTksMHogTTI4OC44MDQsNTQ5LjQxMSAgICBjLTEyLjE0NiwwLTIyLjAzOC05Ljg2MS0yMi4wMzgtMjIuMDQ3YzAtMTIuMTY0LDkuODkyLTIyLjA0NCwyMi4wMzgtMjIuMDQ0YzEyLjE2NSwwLDIyLjA1Nyw5Ljg4LDIyLjA1NywyMi4wNDQgICAgQzMxMC44NjIsNTM5LjU1LDMwMC45NjksNTQ5LjQxMSwyODguODA0LDU0OS40MTF6IE00NzQuOTI4LDQ3MS45MjhjMCw2LjE4Ny01LjAyMywxMS4xOTctMTEuMjA1LDExLjE5N0gxMTMuODg3ICAgIGMtNi4xODUsMC0xMS4yMDQtNS4wMTItMTEuMjA0LTExLjE5N1Y1NS4wMDVjMC02LjE4Niw1LjAxOS0xMS4xOTYsMTEuMjA0LTExLjE5NmgzNDkuODM2YzYuMTgyLDAsMTEuMjA1LDUuMDEsMTEuMjA1LDExLjE5NiAgICBWNDcxLjkyOHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                    />
+                    <img id="keyboard_icon" onclick="tablet_mode(true)" title="keyboard mode" alt="Tablet Mode" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDU1OS45OCA1NTkuOTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU1OS45OCA1NTkuOTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTU5Ljk4LDIxMy40MjdIMzA1LjMyMWMtMzYuNjk2LTcyLjk0Ny0xMTcuMTgtMTAyLjI3Ny0xOTAuMTMtMTI2LjEzN2MtMTguODEtNi4xNS0yNi44MDMsMjMuNDAzLTguMTMzLDI5LjUwOCAgICBjNjAuMjMzLDE5LjY5NywxMjYuNjc1LDQyLjM0MiwxNjIuODY4LDk2LjYyOUgwdjI2MC4xaDU1OS45OFYyMTMuNDI3eiBNNDAyLjg1NSwyNDkuOTE3aDQ4LjQwM3Y0OC40MDNoLTQ4LjQwM1YyNDkuOTE3eiAgICAgTTQxNC40ODksMzI0Ljg4N3Y0OC40MDNIMzY2LjA5di00OC40MDNINDE0LjQ4OXogTTMyOS4zMjMsMjQ5LjkxN2g0OC40MDN2NDguNDAzaC00OC40MDNWMjQ5LjkxN3ogTTM0MC45NTgsMzI0Ljg4N3Y0OC40MDMgICAgaC00OC40MDN2LTQ4LjQwM0gzNDAuOTU4eiBNMjU1Ljc4OSwyNDkuOTE3aDQ4LjQwM3Y0OC40MDNoLTQ4LjQwM1YyNDkuOTE3eiBNMjY3LjQyNiwzMjQuODg3djQ4LjQwM2gtNDguNDAzdi00OC40MDNIMjY3LjQyNnogICAgIE0xODIuMjU3LDI0OS45MTdoNDguNDAzdjQ4LjQwM2gtNDguNDAzVjI0OS45MTd6IE0xOTMuODkxLDMyNC44ODd2NDguNDAzaC00OC40di00OC40MDNIMTkzLjg5MXogTTEwOC43MjIsMjQ5LjkxN2g0OC40MDMgICAgdjQ4LjQwM2gtNDguNDAzVjI0OS45MTd6IE0zNS4xOSwyNDkuOTE3aDQ4LjQwM3Y0OC40MDNIMzUuMTlWMjQ5LjkxN3ogTTcxLjk1NiwzMjQuODg3aDQ4LjQwM3Y0OC40MDNINzEuOTU2VjMyNC44ODd6ICAgICBNNDYzLjgyMyw0NDkuNzg4SDk2LjE1OHYtNDguNDAzaDM2Ny42NjZWNDQ5Ljc4OHogTTQ4OC4wMjQsMzczLjI4OGgtNDguNDAzdi00OC40aDQ4LjQwM1YzNzMuMjg4eiBNNTI0Ljc5LDI5OC4zMThoLTQ4LjQwMyAgICB2LTQ4LjRoNDguNDAzVjI5OC4zMTh6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                    />
+                </div>
+                <div id="credits"><span id="created">Created by</span> <a id="icr" href="https://justinhook.com">Justin&nbsp;Hook</a></div>
+                <div id="attribution" onclick="$('ul').toggle()">attribution</div>
+
+                <div id="credits_box">
+                    <ul>
+
+                        <li>"Trolltunga" photo by <a href="https://flic.kr/p/oqdkFr">Albedo20</a>.</li>
+                        <li>"Kilauea Lava Lake" photo by <a href="https://www.usgs.gov/">U.S. Geological Survey</a> (modified).</li>
+                        <li>"Empty Streets" photo by <a href="https://www.flickr.com/photos/timkelley/">Tim Kelley</a>.</li>
+                        <li>"Sinharaja rainforest" photo by <a href="https://www.flickr.com/people/133962093@N03/">Deeltijdgod</a>.</li>
+                        <li>"Calgary Zoo T Rex" by <a href="https://www.flickr.com/photos/97477873@N00/">Marcia O'Connor</a> (modified).</li>
+                        <li>Volume icon by <a href="http://www.flaticon.com/authors/silviu-runceanu">Silviu Runceanu</a>.</li>
+                        <li>Falling icon, keyboard icon, and tablet icon by <a href="http://www.flaticon.com">Freepik</a>.</li>
+
+                        <li>8bit Trump Head by <a href="https://www.instagram.com/chernowulf/">ChernoWulf</a>.</li>
+                        <li>8bit Sounds by <a href="http://www.sega.com/">Nintendo</a>.</li>
+                        <li>T crash sound built with samples from <a href="http://freesound.org/people/AlanCat/">AlanCat</a> and <a href="http://freesound.org/people/BMacZero/">BMacZero</a>.</li>
+
+                        <li>Wind sound by <a href="http://soundbible.com/1810-Wind.html">Mark DiAngelo</a>.</li>
+                        <li>Lava sound by <a href="https://freesound.org/people/Audionautics/">Audionautics</a>.</li>
+                        <li>Street sound by <a href="https://soundcloud.com/blaukreuz">Tom Chapman</a>.</li>
+                        <li>Jungle sound by <a href="http://freesound.org/people/spiid/">Spiid</a>.</li>
+                        <li>Animal sound by <a href="http://freesound.org/people/Aetherspire/">Aetherspire</a> (modified).</li>
+
+                        <li>High feel footstep sounds by <a href="https://freesound.org/people/OwlStorm/">Natalie Kirk</a>.</li>
+                        <li>Grass footstep sounds by <a href="http://freesound.org/people/Adielees9/">Adielees9</a>.</li>
+
+                        <li>Smoke.js by <a href="https://omrelli.ug/">Guillermo Webster</a>.</li>
+                        <li>FastClick.js by <a href="https://labs.ft.com/">ftlabs</a>.</li>
+
+                        <!-- <li>Created&nbsp;by&nbsp;<a href="https://justinhook.com">Justin&nbsp;Hook</a>.</li>-->
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Content -->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var rate = 0.34561279143037;
+        var hitcount = 6995975;
+        var last_time = 1502999934;
+    </script>
+
+
+    <script src="https://bucket.pushtrumpoffacliffagain.com/confetti.js"></script>
+
+    <script src="https://bucket.pushtrumpoffacliffagain.com/trump.js?1.51"></script>
+
+    <script type="text/javascript" async defer src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-595d2c9f82263d8d"></script>
+
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-102159816-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "VideoGame",
+            "name": "Push Trump Off A Cliff Again!",
+            "url": "https://www.pushtrumpoffacliffagain.com/",
+            "image": "assets/twitter_card.jpg",
+            "description": "Take out your frustrations with President by pushing him off a virtual cliff, or into a virtual volcano, again and again.",
+            "inLanguage": ["English"],
+            "applicationCategory": "Game",
+            "genre": ["Platform", "Comedy", "Javascript", "HTML5"],
+            "gamePlatform": ["Browser", "Chrome", "Safari", "Firefox", "Internet Explorer", "Edge", "Opera"],
+            "operatingSystem": ["Windows", "Mac OS", "OS X", "Fire OS", "Chrome OS", "Linux", "Unix", "Android", "iOS", "Palm OS"],
+            "cheatCode": "Try the Konami code.",
+            "author": {
+                "@type": "Organization",
+                "name": "Justin Hook",
+                "url": "https://justinhook.com"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

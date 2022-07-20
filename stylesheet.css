@@ -1,0 +1,917 @@
+/* Peach Stuff */
+
+body {
+    background-color: #F57558;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#box_wrapper {
+    border: 4px solid #FFF;
+}
+
+h1:hover {
+    text-shadow: rgba(255, 255, 255, .3) 4px 4px 6px;
+}
+
+#push {
+    width: 500px;
+    margin: 2rem 0;
+    border: 2px solid #FFF;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#cnn {
+    margin: 2rem 0;
+}
+
+#cnn_logo {
+    margin-bottom: -.5rem;
+}
+
+#cnn svg {
+    margin: 0 auto;
+    vertical-align: middle
+}
+
+
+/*
+#cnn_logo a:hover {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+*/
+
+#cnn_link {
+    opacity: .5;
+}
+
+#cnn_link:hover {
+    opacity: 1;
+}
+
+#cnn {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#little_peach {
+    position: absolute;
+    background: url('./assets/peach/littlepeach.png') top left no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    z-index: 99;
+    top: -100px;
+    bottom: auto;
+    left: 60%;
+    transform: rotate(30deg);
+}
+
+#little_peach_wrapper {
+    width: 100%;
+}
+
+#little_peaches {
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    left: 0;
+}
+
+#little_peaches img {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+}
+
+#tablet_icon,
+#keyboard_icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper {
+    flex: 1 1 auto;
+    position: relative;
+    box-shadow: inset 0 0 220px 80px rgba(255, 0, 0, .4);
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: rgba(0, 0, 0, .3) 4px 4px 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1,
+h3 {
+    font-family: 'Great Vibes', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    line-height: 3.5rem;
+    margin: 3rem 0 1rem;
+    cursor: default;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+h3 {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+#inpeach {
+    font-size: 5rem;
+}
+
+#leftborder,
+#rightborder {
+    /*   background-color: rgba(255, 0, 0, .4); */
+    box-shadow: inset 0 0 10px 1px rgba(255, 0, 0, .2);
+}
+
+#left,
+#right {
+    /*    background-color: #F57558; */
+}
+
+
+/* End of Peach Stuff */
+
+@keyframes swing {
+    0%,
+    100% {
+        transform: rotate(-10deg)scaleX(1);
+    }
+    50% {
+        transform: rotate(10deg)scaleX(1);
+    }
+}
+
+@keyframes swing_backwards {
+    0%,
+    100% {
+        transform: rotate(-10deg)scaleX(-1);
+    }
+    50% {
+        transform: rotate(10deg)scaleX(-1);
+    }
+}
+
+#torso {
+    transform-origin: 0 0;
+}
+
+#flavor_link {
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#box canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 80;
+    cursor: default;
+}
+
+.tv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: auto;
+    opacity: 0;
+    /*  transition: opacity .5s; */
+}
+
+.active {
+    opacity: 1;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#box_wrapper
+/* PEACH #header_div */
+
+{
+    margin: 2em auto 0
+}
+
+#header {
+    width: 450px
+}
+
+#header_div {
+    text-align: center;
+    display: block
+}
+
+#box_wrapper {
+    background-color: #F57558;
+    ;
+}
+
+#box,
+#box_wrapper {
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+
+#box {
+    overflow: hidden;
+    user-select: none;
+    background: url('./assets/peach/bg-6.jpg') top left no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    margin: 0 auto;
+    z-index: 80;
+    top: 0;
+    left: 0
+}
+
+#loading {
+    top: 50%;
+    height: 2em;
+    width: 100%;
+    margin-top: -1.5em;
+    line-height: 3em;
+    color: #111637;
+    position: absolute;
+    text-transform: lowercase;
+    text-indent: .8em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+body {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#smoker,
+#smoker2 {
+    /*    width: 800px;
+        height: 450px;
+        */
+    display: none;
+}
+
+#falling_icon {
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    bottom: -1.6em;
+    left: 0;
+    opacity: .5;
+}
+
+#camera_icon {
+    width: 1.2em;
+    height: 1.2em;
+    position: absolute;
+    bottom: -1.85em;
+    right: 3em;
+    opacity: 1;
+    display: none;
+}
+
+#spaces {
+    position: relative;
+    font-size: .75em;
+    margin-top: 1em;
+    line-height: 1.5em;
+    text-transform: lowercase;
+    margin-bottom: -.5em;
+    cursor: default;
+    opacity: .5;
+}
+
+#counter {
+    position: absolute;
+    bottom: -1.6em;
+    font-size: 1em;
+    height: 1em;
+    left: 30px;
+    overflow: hidden;
+    width: 100%;
+    cursor: default;
+    user-select: none;
+}
+
+#hitcount_span {
+    position: absolute;
+    top: 0;
+    opacity: .5;
+}
+
+#hitcount_new {
+    position: absolute;
+    top: 1em;
+}
+
+#donald {
+    position: relative;
+    left: -200px;
+    width: 128px;
+    height: 291px;
+    z-index: 90;
+    transform-origin: 0% 100%;
+    cursor: pointer;
+    transform: scale(.75);
+}
+
+#torso,
+#leg1,
+#leg2 {
+    position: absolute;
+    width: 80px;
+}
+
+#torso {
+    height: 214px;
+    position: relative;
+    background: url("./assets/trump_torso_normal.png") no-repeat top left;
+    z-index: 94;
+    background-size: 100%;
+}
+
+#leg1,
+#leg2 {
+    top: 105px;
+    transform-origin: 50% 20%;
+    margin-left: 2px;
+}
+
+#leg1 {
+    background: url("./assets/trump_left_leg.png") no-repeat 0% 100%;
+    background-size: 100%;
+    height: 149px;
+    z-index: 93;
+}
+
+#leg2 {
+    background: url("./assets/trump_right_leg.png") no-repeat 0% 100%;
+    background-size: 100%;
+    height: 149px;
+    z-index: 92;
+    margin-top: -5px
+}
+
+#share {
+    margin: 2em 0;
+}
+
+#rod {
+    width: 100px;
+    height: 18px;
+    transform: rotate(-145deg);
+    margin: 3em 0 2em;
+    border: 0;
+    fill: #FFF;
+}
+
+#rod:hover {
+    fill: #a2d350;
+}
+
+#error {
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-transform: lowercase;
+    height: 2em;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    line-height: 2em;
+    z-index: 96;
+}
+
+#overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("./assets/peach/bg-6-overlay.png") no-repeat 0% 100%;
+    z-index: 96;
+    pointer-events: none;
+}
+
+#tubular {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#content {
+    z-index: 93;
+    text-align: center;
+    position: relative;
+    margin-top: 0em;
+}
+
+#credits {
+    font-size: 1.2em;
+}
+
+#attribution {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#attribution:hover {
+    text-decoration: underline;
+}
+
+#attribution,
+#credits,
+#credits_box {
+    margin-top: 1em;
+    opacity: .5;
+}
+
+#credits_box {
+    min-height: 90px;
+    margin-bottom: 1em;
+}
+
+#footer {
+    text-align: center;
+    position: relative;
+    margin: 2em auto 0;
+    padding: 0;
+    font-weight: normal;
+    z-index: 96;
+    font-size: .75em;
+    max-width: 800px;
+    text-transform: lowercase;
+}
+
+#footer a:link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#footer a:active {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#footer a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#arrows {
+    margin-top: 2em;
+    user-select: none;
+    position: relative;
+}
+
+#a,
+#b {
+    display: none;
+}
+
+#left,
+#right {
+    width: 1.8em;
+    height: 1.8em;
+    display: inline-block;
+    position: relative;
+    border: solid #FFF 1px;
+    border-radius: 3px;
+    line-height: 2.2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#left {
+    text-align: left;
+}
+
+#right {
+    text-align: right;
+}
+
+#leftborder,
+#rightborder {
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    border: solid rgba(255, 255, 255, .2) 1px;
+}
+
+#leftborder {
+    margin-right: 1em;
+    padding: 7px 8px 8px 8px;
+}
+
+#rightborder {
+    padding: 7px 8px 8px 8px;
+}
+
+#scenes {
+    margin-top: 2em;
+    user-select: none;
+}
+
+.scene {
+    cursor: pointer;
+    width: 128px;
+    height: 72px;
+    display: inline-block;
+    margin-right: 1em;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid #f8513d;
+}
+
+#scene6 {
+    background-image: url("./assets/bg1-thumb.jpg");
+}
+
+#scene7 {
+    background-image: url("./assets/bg2-thumb.jpg");
+}
+
+#scene8 {
+    background-image: url("./assets/bg3-thumb.jpg");
+}
+
+#scene9 {
+    background-image: url("./assets/bg4-thumb.jpg");
+}
+
+#scene1 {
+    background-image: url("./assets/peach/bg-6-thumb.jpg");
+    border: 2px solid #FFF;
+}
+
+#scene2 {
+    background-image: url("./assets/peach/bg-8-thumb.jpg");
+}
+
+#scene3 {
+    background-image: url("./assets/peach/bg-9-thumb.jpg");
+}
+
+#scene4 {
+    background-image: url("./assets/peach/bg-7-thumb.jpg");
+}
+
+#giantpeach {
+    background: top left no-repeat url("./assets/peach/giant_peach.png");
+}
+
+#giantpeach,
+#giantpeach_overlay {
+    top: 70px;
+    left: -95px;
+    width: 400px;
+    position: absolute;
+    height: 400px;
+    background-size: 100%;
+    display: none;
+    transform: rotate(-30deg);
+}
+
+#giantpeach_overlay {
+    background: top left no-repeat url("./assets/peach/giant_peach_overlay.png");
+    z-index: 99;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: .3em;
+}
+
+#volume {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -30px;
+    z-index: 99;
+    right: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#dino {
+    width: 595px;
+    height: 490px;
+}
+
+#smoker,
+#smoker2,
+#confetti {
+    width: 100%;
+    height: 100%;
+    z-index: 96;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#dino {
+    display: none;
+    position: absolute;
+    left: 300px;
+    /* right: -70px; */
+    top: -100px;
+    z-index: 95;
+    /*    transform-origin: 800px 800px; */
+}
+
+#spider_open,
+#spider_closed,
+#seagull,
+#head {
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    z-index: 96;
+    display: none;
+}
+
+#head {
+    background-image: url("./assets/peach/peach.png");
+    width: 400px;
+    height: 400px;
+    background-size: 100%;
+    left: 0;
+    top: 0;
+}
+
+#spider_open,
+#spider_closed {
+    width: 253.5px;
+    height: 181px;
+    background-size: 100%;
+    left: 250px;
+    top: 0;
+}
+
+#seagull {
+    background-image: url("./assets/peach/seagull.png");
+    width: 50px;
+    height: 33.75px;
+    background-size: 100%;
+}
+
+
+/*
+
+#spider_open {
+    background-image: url("./assets/peach/spider_open.png")
+}
+
+#spider_closed {
+    background-image: url("./assets/peach/spider_closed.png")
+}
+*/
+
+#dino_and_donald {
+    position: relative;
+    transform-origin: 60% 50%;
+    z-index: 95;
+    top: 0;
+    left: 0;
+}
+
+#wordbubble {
+    display: none;
+    position: absolute;
+    left: 250px;
+    bottom: 40px;
+    background: url("./assets/wordbubble.png") no-repeat top left;
+    z-index: 95;
+    width: 200px;
+    height: 153px;
+    background-size: 100%;
+}
+
+#created {
+    cursor: default;
+}
+
+#a,
+#b {
+    border: solid #FFF 1px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    font-size: 1em;
+    height: 5em;
+    line-height: 5em;
+    width: 5em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#b {
+    margin-right: 20%;
+}
+
+#buttons {
+    user-select: none;
+    position: relative;
+    margin-top: 1em;
+    display: none;
+}
+
+#tablet {
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+#tablet_icon {
+    width: 20px;
+}
+
+#keyboard_icon {
+    display: none;
+    width: 25px;
+}
+
+@media screen and (max-width:830px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-top: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    #header {
+        width: 250px
+    }
+    #box {
+        transform-origin: 0 0;
+        transform: scale(.4);
+        position: absolute;
+        margin: 0;
+    }
+    #box,
+    #box_wrapper {
+        padding: 0
+    }
+    #box_wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 320px;
+        height: 180px;
+        z-index: 0;
+    }
+    #spaces {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #buttons {
+        display: block;
+    }
+    #counter {
+        font-size: .8em;
+        bottom: .3em;
+        left: 2.2em;
+        z-index: 97;
+    }
+    #hitcount_span {
+        opacity: 1;
+    }
+    #falling_icon {
+        bottom: .25em;
+        height: 1em;
+        width: 1em;
+        z-index: 98;
+        opacity: 1;
+    }
+    #error {
+        bottom: 50%;
+        margin-bottom: -2em;
+    }
+    #credits_box {
+        min-height: 2em;
+    }
+    #left,
+    #right {
+        border: solid #FFF 1px;
+        border-radius: 2px;
+        line-height: 2em;
+        font-size: 2.7em;
+    }
+    #arrows {
+        margin-top: 0em;
+    }
+    #spaces {
+        display: none;
+    }
+    #leftborder,
+    #rightborder {
+        border: 0;
+    }
+    #leftborder {
+        margin-right: 10%;
+    }
+    #volume {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        bottom: 0;
+        right: 0;
+    }
+    #footer {
+        margin: 2em 0;
+    }
+    #scenes {
+        margin-top: 0em;
+    }
+    .scene {
+        display: block;
+        margin: 2em auto;
+        height: 144px;
+        width: 256px;
+    }
+    .scene:last-child {
+        margin: 1em auto !important;
+    }
+    #header_div {
+        margin-bottom: 360px;
+        margin: 1em;
+    }
+    #content {
+        position: relative;
+        top: 20px;
+    }
+    #push {
+        width: 300px;
+    }
+}

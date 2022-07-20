@@ -1,0 +1,80 @@
+ #box_wrapper,
+ #header_div {
+     margin: 2em auto 0
+ }
+ 
+ body {
+     background-color: #283681
+ }
+ 
+ #header {
+     width: 450px
+ }
+ 
+ #header_div {
+     text-align: center;
+     display: block
+ }
+ 
+ #box_wrapper {
+     background-color: #1e2862;
+ }
+ 
+ #box,
+ #box_wrapper {
+     width: 800px;
+     height: 450px;
+     position: relative;
+ }
+ 
+ #box {
+     overflow: hidden;
+     user-select: none;
+     background: url('https://bucket.pushtrumpoffacliffagain.com/bg1.jpg') top left no-repeat;
+     background-size: 100%;
+     margin: 0 auto;
+     z-index: 80;
+     top: 0;
+     left: 0
+ }
+ 
+ #loading {
+     top: 50%;
+     height: 2em;
+     width: 100%;
+     margin-top: -1.5em;
+     line-height: 3em;
+     color: #111637;
+     position: absolute;
+     text-transform: lowercase;
+     text-indent: .8em;
+     font-size: 3em;
+     text-align: center;
+     font-weight: bold;
+     z-index: 1;
+ }
+ 
+ @media screen and (max-width:830px) {
+     #header {
+         width: 250px
+     }
+     #box {
+         transform-origin: 0 0;
+         transform: scale(.4);
+         position: absolute
+     }
+     #box,
+     #box_wrapper {
+         margin: 0;
+         padding: 0
+     }
+     #box_wrapper {
+         position: relative;
+         margin: 0 auto;
+         width: 320px;
+         height: 180px
+     }
+     #spaces {
+         display: none;
+     }
+ }
