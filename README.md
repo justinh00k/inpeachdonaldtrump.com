@@ -1,2 +1,2 @@
 # inpeachdonaldtrump.com
- static html site
+js html canvas zen game
